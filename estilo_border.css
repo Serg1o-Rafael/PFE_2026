@@ -1,0 +1,32 @@
+#caixa1 {
+    width: 30%;
+    margin: auto; /* É o espaço entre */
+    border: 2px solid #ff0000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#caixa2 {
+    width: 30%;
+    margin: auto; /* É o espaço entre */
+    border: 2px solid #178596;
+    padding: 10px;
+    border-radius: 50px 20px;
+    margin-top: 20px;
+}
+
+
+
+#titulo {
+    font-family: "Comic Sans MS";
+    font-size: 1.5em;
+    text-align: center;
+}
+
+p {
+    font-family: arial;
+    font-size: large;
+}
+
+
+
