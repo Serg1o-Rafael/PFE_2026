@@ -1,0 +1,17 @@
+    #titulo {
+        font-family: "Comic sans ms";
+        font-size: 2em;
+        color: #437885;
+        text-align: center;
+    }
+
+    #quadrado_verde, #quadrado_azul, #quadrado_vermelho, #quadrado_roxo, #quadrado_laranja, #quadrado_rosa {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        opacity: 0.8;
+    }
+
+    #quadrado_verde {
+        background-color: #2fff89;
+    }
