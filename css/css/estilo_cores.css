@@ -1,0 +1,74 @@
+#fundo_azul {
+    background-color: #4e77d7;
+}
+
+nav {
+    margin: auto;             /* centraliza automaticamente na horizontal, a caixa de navegação */
+    width: 75%;               /* 75% de largura da caixa de navegação em relação a largura da tela */
+    background-color: #333;   /* cor de fundo da caixa de navegação */
+    padding: 10px;            /* margem interna de 10 pixels dentro da caixa de navegação.
+                                 Envolve a margem dos quatro lados: em cima, esquerda, embaixo e direita */
+}
+ 
+nav a {
+    color: #fff;              /* Cor da fonte */
+    margin-right: 3%;         /* margem externa à direita de 3% em relação a largura total da caixa de navegação. */
+    margin-left: 5%;          /* margem externa à esquerda de 5% em relação a largura total da caixa de navegação. */
+    text-decoration: none;    /* links sem underline */
+    font-weight: bold;        /* Letras com negrito */
+    font-family: arial;       /* Nome da fonte */
+    font-size: 16px;          /* Tamanho da fonte. OBS: 16 pixels é o tamanho padrão de fontes no navegador */
+}
+ 
+/* hover é o evento que sobrepõe o ponteiro do mouse no link */
+nav a:hover {
+    text-decoration: underline; /* Quando o usuário sobrepor o ponteiro do mouse, o link ficará sublinhado */
+}
+ 
+#titulo {
+    text-align: center;       /* Centraliza o Título */
+    margin-top: 20px;         /* margem externa com 20 pixels somente para o lado de cima da caixa de título */
+    font-family: "Comic Sans MS";
+    font-size: 32px;          /* OBS: 32 pixels é o dobro do tamanho padrão de fontes no navegador */
+}
+ 
+#titulo {
+    text-align: center;      /* Centraliza o Título */
+    margin-top: 20px;        /* margem externa com 20 pixels somente para o lado de cima da caixa de título */
+    font-family: "Comic Sans MS";
+    font-size: 32px;         /* OBS: 32 pixels é o dobro do tamanho padrão de fontes no navegador */
+}
+ 
+.subtitulo {
+    font-family: arial;
+    font-size: 25px;
+}
+ 
+#inicio {
+    margin: auto;
+    border: 0px;             /* caixa section sem borda */
+    width: 75%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#sobre{
+    margin:auto;
+    border: 0px; /* Caixa section sem borda */
+    width: 75%;
+}
+
+p{
+    font-family: verdana;
+    font-size: 16px;
+}
+
+#rodape {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 50px;
+    font-family: garamond;
+    font-size: 14px;
+}
+ 
