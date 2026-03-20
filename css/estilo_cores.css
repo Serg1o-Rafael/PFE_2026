@@ -1,5 +1,37 @@
+#fundo_vermelho{
+    background-color: red;
+}
+
+#fundo_verde {
+    background-color: green;
+}
+
+#fundo_roxo {
+    background-color: purple;
+}
+
+#fundo_laranja {
+    background-color: orange;
+} 
+
+#fundo_preto{
+    background-color: rgba(0, 0, 0, 0.713);
+}
+
+#fundo_amarelo {
+    background-color: rgb(229, 219, 27);
+}
+
 #fundo_azul {
     background-color: #4e77d7;
+}
+
+#fundo_branco{
+    color: black;
+}
+
+body{
+    color: white;
 }
 
 nav {
