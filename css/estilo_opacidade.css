@@ -1,0 +1,42 @@
+body {
+    margin:0; 
+}
+
+#titulo {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    font-size: 2em;
+}
+
+#container {
+    display: grid; /* Constrói uma tabela, ou seja, junção de linha(s) e coluna(s) */
+    margin: auto;
+    width: 70%;
+    border: 0px solid red;
+    grid-template-columns: 1fr 1fr;  /* duas colunas 1fr uma fração do espaço total disponível na largura do navegador  */
+    gap:10px;
+}
+
+.coluna {
+    border: 0px solid blue;
+   
+}
+
+
+
+.coluna img {
+    transition: 0.4s; /* transição de 4 segundos quando passa o mouse */
+    opacity: 0.6; /* a imagem fica 60% opaco */
+    width: 100%;
+    border-radius: 10px;
+}
+
+.coluna figure {
+    margin: 0;
+}
+
+
+.coluna img:hover{
+    opacity: 1;
+    transform: scale (1.05);
+}
