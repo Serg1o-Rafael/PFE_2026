@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - - Formulário Contato - - </title>
+    <link rel="stylesheet" href="css/estilo_form_CPF_CNPJ.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo"> Formulário Contato</h1>
+    </header>
+    <section id="container_formulario">
+        <form action="">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <!-- PESSOA FÍSICA OU JURÍDICA -->
+                 <label for="pessoa">
+                    <input type="radio" name="pessoa" id="pessoaid" value="fisica" required>Pessoa Física&nbsp;&nbsp;
+                    <input type="radio" name="pessoa" id="pessoaid" value="juridica" required>Pessoa Jurídica
+                </label>
+
+                <section id="novoCampo"></section>
+
+               <!--  Nome do Usuário -->
+
+                <label for="nome">nome
+                    <input type="text" name="nome" id="nomeid" class="caixa_texto" placeholder="Nome Completo" required>
+                </label>
+
+                <!-- Email do Usuário -->
+
+                  <label for="email">nome
+                    <input type="email" name="email" id="emailid" class="caixa_texto" placeholder="name@mail.com" required>
+                </label>
+
+                <!-- Lougradouro do usuário -->
+
+                <label for="endereco">nome
+                    <input type="text" name="endereco" id="enderecoid" class="caixa_texto" placeholder="Rua/Av./Alameda" required>
+                </label>
+
+               <!--  Bairro do Usuário -->
+
+                <label for="bairro">nome
+                    <input type="text" name="bairro" id="bairroid" class="caixa_texto" placeholder="Pq/Jd/Vila" required>
+                </label>
+
+                <!-- Cidade do Usuário -->
+
+                <label for="cidade">nome
+                    <input type="text" name="cidade" id="cidadeid" class="caixa_texto" required>&nbsp;&nbsp;
+                    <select name="UF" id="UFid">
+                        <option value = "AC">AC</option>
+                        <option value = "AL">AL</option>
+                        <option value = "AM">AM</option>
+                        <option value = "AP">AP</option>
+                        <option value = "BA">BA</option>
+                        <option value = "CE">CE</option>
+                        <option value = "DF">DF</option>
+                        <option value = "ES">ES</option>
+                        <option value = "MA">MA</option>
+                        <option value = "MG">MG</option>
+                        <option value = "MS">MS</option>
+                        <option value = "MT">MT</option>
+                        <option value = "PA">PA</option>
+                        <option value = "PB">PB</option>
+                        <option value = "PE">PE</option>
+                        <option value = "PI">PI</option>
+                        <option value = "PR">PR</option>
+                        <option value = "RJ">RJ</option>
+                        <option value = "RN">RN</option>
+                        <option value = "RO">RO</option>
+                        <option value = "RR">RR</option>
+                        <option value = "RS">RS</option>
+                        <option value = "SC">SC</option>
+                        <option value = "SE">SE</option>
+                        <option value = "SP" selected>SP</option>
+                        <option value = "TO">TO</option>
+                    </select>
+                    <label for="CEP">
+                        <input type="text" name="cep" id="cepid" class="caixa_texto" placeholder="xxxxx-xxx" pattern="[0-9] {8}" required maxlength="8">
+                    </label>
+
+
+                </label>
+
+
+
+                 
+            </fieldset>
+        </form>
+    </section>
+    
+</body>
+</html>
