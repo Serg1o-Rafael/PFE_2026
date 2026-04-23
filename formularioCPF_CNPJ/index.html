@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> - - Formulário Contato - - </title>
     <link rel="stylesheet" href="css/estilo_form_CPF_CNPJ.css" type="text/css">
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+  <!--   defer: significa que ele vai executar todo o html pra depois acionar o javascript -->
+
 </head>
 <body>
     <header>
         <h1 id="titulo"> Formulário Contato</h1>
     </header>
-    <section id="container_formulario">
+    <section class="container_formulario">
         <form action="">
             <fieldset>
                 <legend>Dados Pessoais</legend>
 
                 <!-- PESSOA FÍSICA OU JURÍDICA -->
-                 <label for="pessoa">
+                 <label for="pessoa" class="linha">
                     <input type="radio" name="pessoa" id="pessoaid" value="fisica" required>Pessoa Física&nbsp;&nbsp;
                     <input type="radio" name="pessoa" id="pessoaid" value="juridica" required>Pessoa Jurídica
                 </label>
@@ -25,31 +29,31 @@
 
                <!--  Nome do Usuário -->
 
-                <label for="nome">nome
+                <label for="nome" class="linha"> <span>Nome</span>
                     <input type="text" name="nome" id="nomeid" class="caixa_texto" placeholder="Nome Completo" required>
                 </label>
 
                 <!-- Email do Usuário -->
 
-                  <label for="email">nome
+                  <label for="email" class="linha"><span>Email</span> 
                     <input type="email" name="email" id="emailid" class="caixa_texto" placeholder="name@mail.com" required>
                 </label>
 
                 <!-- Lougradouro do usuário -->
 
-                <label for="endereco">nome
+                <label for="endereco" class="linha"><span>Endereço</span>
                     <input type="text" name="endereco" id="enderecoid" class="caixa_texto" placeholder="Rua/Av./Alameda" required>
                 </label>
 
                <!--  Bairro do Usuário -->
 
-                <label for="bairro">nome
+                <label for="bairro" class="linha"><span>Bairro</span>
                     <input type="text" name="bairro" id="bairroid" class="caixa_texto" placeholder="Pq/Jd/Vila" required>
                 </label>
 
                 <!-- Cidade do Usuário -->
 
-                <label for="cidade">nome
+                <label for="cidade" class="linha"> <span>Cidade</span>
                     <input type="text" name="cidade" id="cidadeid" class="caixa_texto" required>&nbsp;&nbsp;
                     <select name="UF" id="UFid">
                         <option value = "AC">AC</option>
@@ -78,13 +82,13 @@
                         <option value = "SE">SE</option>
                         <option value = "SP" selected>SP</option>
                         <option value = "TO">TO</option>
-                    </select>
-                    <label for="CEP"></label>
+                    </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span id="CEP"></span>
                         <input type="text" name="cep" id="cepid" class="caixa_texto" placeholder="xxxxx-xxx" pattern="[0-9] {8}" required maxlength="8">
                 </label>
             </fieldset>
             <p>
-                <input type="submit" value="Enviar" class="botao">
+                <input type="submit" value="Enviar" class="botao">&nbsp;&nbsp;
                 <input type="reset" value="Apagar" class="botao">
             </p>
         </form>
