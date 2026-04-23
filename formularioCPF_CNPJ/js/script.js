@@ -5,7 +5,7 @@ A função ready executa uma ação (função) assim que a página é totalmente
 */
  
  
-$(document).ready(function() {
+/*  $(document).ready(function() {
     $("input[name=pessoa]").on("click", function(){ // Ao clicar em um dos botões de rádio (Pessoa fisica ou jurídica, será executado umã ação (função).
      valorPessoa = $('input[name=pessoa]:checked').val() //A variável valorPessoa recebe o valor do botão de rádio clicado pelo usuário
      if(valorPessoa == 'fisica'){
@@ -16,4 +16,22 @@ $(document).ready(function() {
  
     })
 })
- 
+   */
+
+document.addEventListener("DOMContentLoaded", () =>{
+      const radios = document.querySelectorAll('input[name="pessoa"')
+      const novoCampo = document.getElementById("novoCampo")
+
+      radios.forEach(radio => {
+         radio.addEventListener("click", () =>{
+            const valorPessoa = document.querySelector('input[name="pessoa"]:checked').value
+
+            if(valorPessoa == 'fisica') {
+               novoCampo.innerHTML = '<label for=CPF class=linha><span>CPF</span><input type=text name=CPF id=CPFid class=caixa_texto placeholder=XXX-XXX-XXX-XX required></label>'
+            } else if (valorPessoa == 'juridica'){
+               novoCampo.innerHTML ='<label for=CNPJ class=linha><span>CNPJ</span><input type=text name=CNPJ id=CNPJid class=caixa_texto placeholder=XXX-XXX-XXX/XXXX required></label>'
+
+            }
+         })
+      })
+   })

@@ -31,12 +31,12 @@
 }
 
 
-.container_formulario input [type=text], .container_formulario input [type=email] {
+.container_formulario input[type=text], .container_formulario input[type=email] {
     width: 75%;
 }
 
 #cepid{ 
-    width: 30%;
+    width: 20%;
 }
 
 #cidadeid{
