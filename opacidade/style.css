@@ -8,7 +8,7 @@ body {
 }
 
 figure {   /* tag figure é utilizado para aplicar estilos definidos dentro de seu bloco */
-    position: relative;    /* define o posicionamento como relativo */
+    position: relative;    /* define o posicionamento como relativo, ou seja, significa que o elemento(figura) será posicionado em relação a sua própria posição original da página */
     width: 500px;          /* define a largura fixa do elemento como 500 pixels */
     overflow: hidden;      /* Esconde qualquer conteúdo, que neste caso é a imagem,
                               que ultrapasse os limites do <figure> */
