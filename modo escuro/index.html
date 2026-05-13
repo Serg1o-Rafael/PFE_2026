@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilo_escuro.css" type="text/css">
+    <title>Modo Escuro ON/OFF</title>
+</head>
+
+<body id="pagina">
+    <header>
+        <h1>Modo Escuro com botão ON/OFF</h1>
+    </header>
+
+    <p>Clique no botão para escurecer a página</p>
+
+    <button id="btnModo">
+        ON / OFF
+    </button>
+
+    <script>
+
+        // Selecione o botão
+        const botao = document.getElementById("btnModo")
+
+        // EVENTO É UMA AÇÃO PROVOCADA PELO USUÁRIO
+
+        // Evento de clique
+        botao.addEventListener("click", function() {   // Ao clicar no botão, será executada a função
+
+            // Adiciona ou remove a classe modo escuro
+            document.getElementById("pagina").classList.toggle("dark")
+
+            // O método classList.toggle() do Javascript serve para adicionar ou remover uma classe CSS automaticamente de um elemento HTML
+            // Funciona assim: Se a classe já existe, ele remove. Se a classe não existe, ele adiciona.
+
+        })
+
+    </script>
+</body>
+
+</html>
